@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity
         location();
         CameraPosition cameraPosition = CameraPosition
                 .builder()
-                .target(new LatLng(42.8731844, 74.5834363))
-                .zoom(19.75f).build();
+                .target(new LatLng(42.882004, 74.582748))
+                .zoom(13f).build();
         map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
         figure = App.database.figureDao().getCoordinates();
         if (figure.size() > 0){
